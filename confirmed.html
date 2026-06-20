@@ -312,10 +312,38 @@
       </div>
     </div>
 
+    <div style="margin: 24px 0 32px;">
+      <a href="https://t.me/ai_hustlers_sale_bot" class="btn">
+        ПЕРЕЙТИ В ТЕЛЕГРАМ →
+      </a>
+      <p id="redirect-status" style="font-size: 13px; color: #adc6ff; margin-top: 14px; font-weight: 500;">
+        Автоматический переход к трансляции через <span id="countdown" style="font-weight: 700;">3</span> сек...
+      </p>
+    </div>
+
     <p class="notice">
       Ссылка на вебинарную комнату отправлена на указанную вами почту.<br>
       Если письмо не пришло в течение 5 минут, обязательно проверьте папку «Спам» или «Промоакции».
     </p>
   </div>
+
+  <script>
+    (function() {
+      var countdownEl = document.getElementById('countdown');
+      var seconds = 3;
+      var redirectUrl = 'https://t.me/ai_hustlers_sale_bot';
+      
+      var interval = setInterval(function() {
+        seconds--;
+        if (countdownEl) {
+          countdownEl.textContent = seconds;
+        }
+        if (seconds <= 0) {
+          clearInterval(interval);
+          window.location.href = redirectUrl;
+        }
+      }, 1000);
+    })();
+  </script>
 </body>
 </html>
