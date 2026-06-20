@@ -1,0 +1,5 @@
+[core]
+	bare = false
+[remote "origin"]
+	url = https://github.com/maxtyutin/aihustler-workshop.git
+	fetch = +refs/heads/*:refs/remotes/origin/*

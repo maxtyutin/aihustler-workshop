@@ -1,0 +1,5 @@
+b9da97b3eee5365978dc2930603ebf624b638f98 131ec2b6bd3769732570841dcbc0aa55da20fdf1 Максим Тютин <maxtyutin@MacBook-Air.local> 1781979648 +0300	commit: Update design, paths, and add confirmation page
+131ec2b6bd3769732570841dcbc0aa55da20fdf1 12498cf3a3dbb455ae15472e9a310119607b0427 Максим Тютин <maxtyutin@MacBook-Air.local> 1781979723 +0300	commit: Change all Next.js asset paths to root
+12498cf3a3dbb455ae15472e9a310119607b0427 f253e86211d070fe7575bf7f0eebc7965f33806e Максим Тютин <maxtyutin@MacBook-Air.local> 1781979926 +0300	commit: Move confirmation page to root confirmed.html
+f253e86211d070fe7575bf7f0eebc7965f33806e 541bae6b09c1c15e35e2f8e29b592997a24ab5d6 Максим Тютин <maxtyutin@MacBook-Air.local> 1781980943 +0300	commit: Restore full Next.js folder structure
+541bae6b09c1c15e35e2f8e29b592997a24ab5d6 042e9cb3f03718add1a4ab7197efee25fb1b5096 Максим Тютин <maxtyutin@MacBook-Air.local> 1781982439 +0300	commit: Add .nojekyll to disable Jekyll on GitHub Pages
