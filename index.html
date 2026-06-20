@@ -238,9 +238,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Intercept clicks on any buttons that contain "забронировать" or "присоединиться"
     document.addEventListener('click', function(e) {
       var target = e.target;
+      if (modal && modal.contains(target)) {
+        return; // Do not intercept clicks inside the modal
+      }
       while (target && target !== document.body) {
         var isButton = target.tagName === 'BUTTON' || (target.tagName === 'A' && target.getAttribute('role') === 'button');
-        if (isButton && target.id !== 'custom-submit-btn') {
+        if (isButton) {
           var text = target.textContent.toLowerCase();
           if (text.indexOf('забронировать') !== -1 || text.indexOf('присоединиться') !== -1) {
             showModal(e);
